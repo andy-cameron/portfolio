@@ -1,7 +1,13 @@
 .menu {
-	float: right;
-	padding-right: 150px;
 	padding-top: 30px;
+	width: 100%;
+	float: right;
+	position: fixed;
+}
+
+.menu-container {
+	float: right;
+	padding-right: 5%;
 }
 
 .menu a {

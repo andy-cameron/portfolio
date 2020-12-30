@@ -1,15 +1,21 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import MenuBar from './MenuBar';
+import About from './About';
+import Home from './Home';
 
-class App extends React.Component {
-	render() {
-		return (
-			<div className='background'>
+export default () => {
+	const [currentScreen, setCurrentScreen] = useState('');
+
+	return (
+		<div className='background'>
+			<div className='header-container'>
 				<MenuBar />
 			</div>
-		);
-	}
-}
-
-export default App;
+			<div className='screens-container'>
+				<Home />
+				<About />
+			</div>
+		</div>
+	);
+};
